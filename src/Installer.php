@@ -5,7 +5,7 @@ namespace Webiny\Composer;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class AppInstaller extends LibraryInstaller
+class Installer extends LibraryInstaller
 {
     /**
      * {@inheritDoc}

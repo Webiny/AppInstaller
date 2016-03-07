@@ -2,10 +2,10 @@
     "name": "webiny/app-installer",
     "type": "composer-plugin",
     "autoload": {
-        "psr-0": {"Webiny\\Composer": "src/"}
+        "psr-0": {"Webiny\\AppInstaller": "src/"}
     },
     "extra": {
-        "class": "Webiny\\Composer\\AppInstallerPlugin"
+        "class": "Webiny\\AppInstaller\\Plugin"
     },
     "require": {
         "composer-plugin-api": "^1.0"
