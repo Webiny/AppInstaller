@@ -1,6 +1,6 @@
 <?php
 
-namespace Webiny\Composer;
+namespace Webiny\AppInstaller;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;

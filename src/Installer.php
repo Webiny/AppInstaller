@@ -1,6 +1,6 @@
 <?php
 
-namespace Webiny\Composer;
+namespace Webiny\AppInstaller;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
