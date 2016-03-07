@@ -20,9 +20,24 @@ class Installer extends LibraryInstaller
         return 'Apps/' . $appName;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function supports($packageType)
+    {
+        return 'webiny-app' === $packageType;
+    }
+
     public function install(InstalledRepositoryInterface $repo, PackageInterface $package)
     {
         parent::install($repo, $package);
+
+        echo "\n\nINSTALLED: " . $package->getName();
+    }
+
+    public function update(InstalledRepositoryInterface $repo, PackageInterface $initial, PackageInterface $target)
+    {
+        parent::update($repo, $initial, $target);
     }
 
     public function uninstall(InstalledRepositoryInterface $repo, PackageInterface $package)
@@ -31,11 +46,4 @@ class Installer extends LibraryInstaller
     }
 
 
-    /**
-     * {@inheritDoc}
-     */
-    public function supports($packageType)
-    {
-        return 'webiny-app' === $packageType;
-    }
 }
