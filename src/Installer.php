@@ -31,8 +31,6 @@ class Installer extends LibraryInstaller
     public function install(InstalledRepositoryInterface $repo, PackageInterface $package)
     {
         parent::install($repo, $package);
-
-        echo "\n\nINSTALLED: " . $package->getName();
     }
 
     public function update(InstalledRepositoryInterface $repo, PackageInterface $initial, PackageInterface $target)
