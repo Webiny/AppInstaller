@@ -4,6 +4,7 @@ namespace Webiny\AppInstaller;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
+use Composer\Repository\InstalledRepositoryInterface;
 
 class Installer extends LibraryInstaller
 {
@@ -18,6 +19,17 @@ class Installer extends LibraryInstaller
 
         return 'Apps/' . $appName;
     }
+
+    public function install(InstalledRepositoryInterface $repo, PackageInterface $package)
+    {
+        parent::install($repo, $package);
+    }
+
+    public function uninstall(InstalledRepositoryInterface $repo, PackageInterface $package)
+    {
+        parent::uninstall($repo, $package);
+    }
+
 
     /**
      * {@inheritDoc}
