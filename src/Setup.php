@@ -21,6 +21,7 @@ class Setup extends LibraryInstaller
         parent::update($repo, $initial, $target);
         exec('cp -f ' . $this->getInstallPath($target) . '/install/structure/gulpfile.js ./gulpfile.js');
         exec('cp -f ' . $this->getInstallPath($target) . '/install/structure/package.json ./package.json');
+        exec('cp -f ' . $this->getInstallPath($target) . '/install/structure/.eslintrc ./.eslintrc');
         exec('cp -R ' . $this->getInstallPath($target) . '/install/structure/gulp/* ./gulp');
     }
 }
