@@ -32,16 +32,4 @@ class Installer extends LibraryInstaller
     {
         parent::install($repo, $package);
     }
-
-    public function update(InstalledRepositoryInterface $repo, PackageInterface $initial, PackageInterface $target)
-    {
-        parent::update($repo, $initial, $target);
-    }
-
-    public function uninstall(InstalledRepositoryInterface $repo, PackageInterface $package)
-    {
-        parent::uninstall($repo, $package);
-    }
-
-
 }
