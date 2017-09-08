@@ -5,10 +5,7 @@
         "psr-4": {"Webiny\\AppInstaller\\": "src/"}
     },
     "extra": {
-        "class": "Webiny\\AppInstaller\\Plugin",
-        "branch-alias": {
-            "0.1-dev": "0.1-dev"
-        }
+        "class": "Webiny\\AppInstaller\\Plugin"
     },
     "require": {
         "composer-plugin-api": "^1.0"
